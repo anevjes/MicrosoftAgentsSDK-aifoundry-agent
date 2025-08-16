@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Environment
+.env
+.env.*
+*.env
+env.TEMPLATE
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Certificates
+certs/*.pem
+
+# Logs
+*.log
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Other
+*.sqlite3
+*.db
+
+# Ignore secrets
+secrets.*
+
+# Ignore test output
+htmlcov/
+coverage.xml
+
+# Ignore node modules (if any)
+node_modules/
