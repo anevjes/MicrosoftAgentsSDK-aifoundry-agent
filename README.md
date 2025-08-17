@@ -17,7 +17,7 @@ flowchart TD
     Teams --> BotSvc
     Copilot --> BotSvc
     BotSvc --> AppSvc[Azure App Service - Messanging endpoint]
-    AppSvc --> AgentSDK[Agent SDK]
+    AppSvc --> AgentSDK[Microsoft 365 Agents SDK]
     AgentSDK --> Foundry[AI Foundry Agent Service]
 ```
 
