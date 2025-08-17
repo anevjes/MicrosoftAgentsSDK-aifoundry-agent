@@ -9,7 +9,7 @@ This sample is designed to introduce the basics of integrating the Agent SDK wit
 ```mermaid
 flowchart TD
     subgraph Clients
-        WC[Azure Bot Service]
+        WC[WebChat - Azure Bot Service]
         Teams[Microsoft Teams]
         Copilot[Microsoft Copilot]
     end
