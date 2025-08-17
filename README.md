@@ -1,9 +1,10 @@
-
 # Weather Prediction Agent
 
 This project demonstrates a simple weather-forecasting Agent built with the Microsoft 365 Agents SDK, communicating directly with the Azure AI Foundry Agent service. The Agent receives user requests for weather forecasts and responds by leveraging the AI Foundry Agent, which in turn calls MSN Weather via a Logic App tool.
 
 This sample is designed to introduce the basics of integrating the Agent SDK with Azure AI Foundry Agent service. It provides a foundation for building custom Agents that interact with AI Foundry agents.
+
+
 
 ## Prerequisites
 
@@ -70,6 +71,23 @@ The agent is ready to accept messages.
 ### Using the Agent in WebChat
 
 1. Go to your Azure Bot Service resource in the Azure Portal and select **Test in WebChat**
+
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+    subgraph Clients
+        WC[Web Chat (Azure Bot Service)]
+        Teams[Microsoft Teams]
+        Copilot[Microsoft Copilot]
+    end
+    WC --> BotSvc[Azure Bot Service]
+    Teams --> BotSvc
+    Copilot --> BotSvc
+    BotSvc --> AppSvc[Azure App Service]
+    AppSvc --> AgentSDK[Agent SDK]
+    AgentSDK --> Foundry[AI Foundry Agent Service]
+```
 
 ## Further reading
 To learn more about building Agents, see our [Microsoft 365 Agents SDK](https://github.com/microsoft/agents) repo.
