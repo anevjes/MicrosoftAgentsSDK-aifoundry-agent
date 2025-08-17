@@ -1,10 +1,9 @@
+
 # Weather Prediction Agent
 
-This is a sample of a simple weather-forecasting Agent that is hosted on a Python web service. This Agent accepts a request asking for a weather forecast and responds to the users using Ai-Foundry Agent service which calls msn weather using a logic app as a tool.
+This project demonstrates a simple weather-forecasting Agent built with the Microsoft 365 Agents SDK, communicating directly with the Azure AI Foundry Agent service. The Agent receives user requests for weather forecasts and responds by leveraging the AI Foundry Agent, which in turn calls MSN Weather via a Logic App tool.
 
-This Agent Sample is intended to introduce you the basics of integrating Semantic Kernel with the Microsoft 365 Agents SDK in order to build powerful Agents. It can also be used as a the base for a custom Agent that you choose to develop.
-
-***Note:*** This sample requires JSON output from the model which works best from newer versions of the model such as `gpt-4o-mini`.
+This sample is designed to introduce the basics of integrating the Agent SDK with Azure AI Foundry Agent service. It provides a foundation for building custom Agents that interact with AI Foundry agents.
 
 ## Prerequisites
 
@@ -74,5 +73,3 @@ The agent is ready to accept messages.
 
 ## Further reading
 To learn more about building Agents, see our [Microsoft 365 Agents SDK](https://github.com/microsoft/agents) repo.
-
-For more information on logging configuration, see the logging section in the Quickstart Agent sample README.
