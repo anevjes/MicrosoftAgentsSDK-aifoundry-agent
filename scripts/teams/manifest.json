@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.22/MicrosoftTeams.schema.json",
+  "version": "1.0.0",
+  "manifestVersion": "1.22",
+  "id": "dbba8c89-e1e0-4167-8433-c60051420766",
+  "name": { "short": "test-arian-agentSDK" },
+  "developer": {
+    "name": "Arian Nevjestic",
+    "websiteUrl": "https://github.com/anevjes",
+    "privacyUrl": "https://github.com/anevjes",
+    "termsOfUseUrl": "https://github.com/anevjes"
+  },
+  "description": {
+    "short": "AgentSDK sample arian",
+    "full": "AgentSDK sample arian"
+  },
+  "icons": { "outline": "outline.png", "color": "color.png" },
+  "accentColor": "#ffffff",
+  "bots": [
+    {
+      "botId": "6f4d5b65-f55f-4ad6-971e-0ff6ee49eb0b",
+      "scopes": ["personal"],
+      "isNotificationOnly": false,
+      "supportsCalling": false,
+      "supportsVideo": false,
+      "supportsFiles": false
+    }
+  ],
+  "validDomains": []
+}
